@@ -1,0 +1,10 @@
+
+scenario :Invalidation : Vendor status is in restriction with both the reasons 1.Fiscal sign and 2.others
+
+Given I accept the W9 form in Cpanel
+When I set the vendor status to Fiscal sign and others
+Then I verify the account status is active or still restriction   
+   
+ -----------------------------------------------------------------------------------------------------------------
+
+ 
